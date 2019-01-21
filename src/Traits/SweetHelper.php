@@ -1,7 +1,8 @@
 <?php 
 
 namespace Laravelcode\LaravelSweet\Traits;
-use \LaravelSweet\Classes\SweetAlertHelper;
+
+use \Laravelcode\LaravelSweet\Classes\SweetAlertHelper;
 
 
 trait SweetHelper
