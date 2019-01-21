@@ -3,7 +3,7 @@
 Using Composer
 
 ```
-composer require 
+composer require laravelcode/laravel-sweet
 ```
 
 Add the service provider to `config/app.php`
