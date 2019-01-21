@@ -17,7 +17,7 @@ Laravelcode\LaravelSweet\SweetProvider::class,
 inside  class you want to use 
 
 ```php
-use Laravelcode\LaravelSweet\Traits\SweetHelper;
+use \Laravelcode\LaravelSweet\Traits\SweetHelper;
 ```
 
 ### Basic
