@@ -1,0 +1,23 @@
+{
+    "name": "larvelcode/cagcategories",
+    "description": "Make sweetalert  Laravel project",
+    "keywords":["Laravel","sweetalert"],
+    "license": "MIT",
+    "version":"1.0",
+    "authors": [
+        {
+            "name": "Ahmed Saad",
+            "email": "me@ahmedsaad.net"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelSweet\\":"src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
