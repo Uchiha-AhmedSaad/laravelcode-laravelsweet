@@ -1,6 +1,6 @@
 <?php 
 
-namespace LaravelSweet\Classes;
+namespace Laravelcode\LaravelSweet\Classes;
 
 
 class SweetAlertHelper

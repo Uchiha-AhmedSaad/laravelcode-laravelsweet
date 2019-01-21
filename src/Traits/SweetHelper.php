@@ -1,6 +1,6 @@
 <?php 
 
-namespace LaravelSweet\Traits;
+namespace Laravelcode\LaravelSweet\Traits;
 use \LaravelSweet\Classes\SweetAlertHelper;
 
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelSweet;
+namespace Laravelcode\LaravelSweet;
 
 use Illuminate\Support\ServiceProvider;
 use LaravelSweet\Traits;

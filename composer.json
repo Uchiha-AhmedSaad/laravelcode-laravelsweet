@@ -1,5 +1,5 @@
 {
-    "name": "LaravelSweet",
+    "name": "Laravelcode\\LaravelSweet",
     "description": "Make sweetalert  Laravel project",
     "keywords":["Laravel","sweetalert"],
     "license": "MIT",
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "LaravelSweet\\":"src/"
+            "Laravelcode\\LaravelSweet\\":"src/"
         }
     },
     "minimum-stability": "dev",
