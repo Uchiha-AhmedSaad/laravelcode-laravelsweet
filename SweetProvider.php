@@ -3,7 +3,7 @@
 namespace Laravelcode\LaravelSweet;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelSweet\Traits;
+use Laravelcode\LaravelSweet\Traits;
 
 class SweetProvider extends ServiceProvider
 {
