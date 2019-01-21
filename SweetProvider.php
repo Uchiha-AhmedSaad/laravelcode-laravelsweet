@@ -11,10 +11,6 @@ class SweetProvider extends ServiceProvider
     public function boot()
     {
         $this->files();
-
-        $this->app->singleton('LaravelSweet', function ($app) {
-            return $this->SweetFlash($element,$method)
-        });
     }
     /**
      * Register bindings in the container.
