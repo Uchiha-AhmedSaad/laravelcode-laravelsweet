@@ -28,7 +28,7 @@ use \Laravelcode\LaravelSweet\Traits\SweetHelper;
 
 class UsersController extends ComponentsController
 {
-    use LaravelSweet\Traits\SweetHelper;
+   use \Laravelcode\LaravelSweet\Traits\SweetHelper;
 
     public function Index()
     {
