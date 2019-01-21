@@ -9,7 +9,7 @@ composer require laravelcode/laravel-sweet
 Add the service provider to `config/app.php`
 
 ```php
-LaravelSweet\SweetProvider::class,
+Laravelcode\LaravelSweet\SweetProvider::class,
 ```
 
 
@@ -17,7 +17,7 @@ LaravelSweet\SweetProvider::class,
 inside  class you want to use 
 
 ```php
-use LaravelSweet\Traits\SweetHelper;
+use Laravelcode\LaravelSweet\Traits\SweetHelper;
 ```
 
 ### Basic
