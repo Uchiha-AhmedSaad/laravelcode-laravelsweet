@@ -3,7 +3,7 @@
 namespace Laravelcode\LaravelSweet;
 
 use Illuminate\Support\ServiceProvider;
-use LaravelSweet\Traits\SweetHelper;
+use Laravelcode\LaravelSweet\Traits\SweetHelper;
 
 class SweetProvider extends ServiceProvider
 {
@@ -23,6 +23,6 @@ class SweetProvider extends ServiceProvider
     }
     public function files()
     {
-        require __DIR__ . '/Files/Helper.php';
+        require __DIR__ . 'Files/Helper.php';
     }
 }

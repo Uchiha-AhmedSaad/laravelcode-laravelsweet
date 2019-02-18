@@ -16,6 +16,9 @@ Laravelcode\LaravelSweet\SweetProvider::class,
 ## Usage
 inside  class you want to use 
 
+```php
+use \Laravelcode\LaravelSweet\Traits\SweetHelper;
+```
 
 ### Basic
 
@@ -25,10 +28,11 @@ inside  class you want to use
 
 class UsersController extends ComponentsController
 {
+   use \Laravelcode\LaravelSweet\Traits\SweetHelper;
 
     public function Index()
     {
-        SweetFlash($filed_name,$method,$status,$time);
+        $this->SweetFlash($filed_name,$method,$status,$time);
     }
 
 }
@@ -46,7 +50,38 @@ $time replace it with the time you want to see sweet alert if you want to see it
 if 5 5000 and so on  
 
 
-Then, in your view. master page 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Then, in your view.
 
 ```javascript
 @if (Session::has('Flash_message'))
