@@ -16,30 +16,33 @@ Laravelcode\LaravelSweet\SweetProvider::class,
 ## Usage
 inside  class you want to use 
 
-```php
-use \Laravelcode\LaravelSweet\Traits\SweetHelper;
-```
 
 ### Basic
 
 
 ```php
-
+/**
+     *@param string $field_name  
+     *@param string $method      The function of method ['Create','Update','Delete','Edit']
+     *@param string $status      Choose one of this ['error','success','warning']
+     *@param int    $time        choose the time you want to delay appear sweetalert 1 second = 1000 
+     *@return void               no return of this function sweetalert it just make session of this .
+*/
 
 class UsersController extends ComponentsController
 {
-   use \Laravelcode\LaravelSweet\Traits\SweetHelper;
 
     public function Index()
     {
-        $this->SweetFlash($filed_name,$method,$status,$time);
+        SweetFlash($field_name,$method,$status,$time);
     }
 
 }
 ```
 
 in this example 
-$filed_name replace it with the name of your filed you make if you create user write user if you make product write product.
+$field_name replace it with the name of your filed you make if you use sweet alert to  Create User write 
+in this field . 
 
 $method replace it with the name of your method creat or update or delete.
 
@@ -50,49 +53,18 @@ $time replace it with the time you want to see sweet alert if you want to see it
 if 5 5000 and so on  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Then, in your view.
+Then, in your view. master page 
 
 ```javascript
-@if (Session::has('Flash_message'))
-    <script>
-        swal({
-            icon: "{{Session::get('Flash_message') }}",
-            title: "{{Session::get('title')}}",
-            timer:"{{Session::get('timer')}}",
-            text: "{{Session::get('text')}}"
-        });
-    </script>
-    {{Sweet_Session_fired()}}
-@endif
+    @if (Session::has('Flash_message'))
+        <script>
+            swal({
+                icon:  "{{sweetElement('Flash_message') }}",
+                title: "{{sweetElement('title')}}",
+                timer: "{{sweetElement('timer')}}",
+                text:  "{{sweetElement('text')}}"
+            });
+        </script>
+        {{Sweet_Session_fired()}}
+    @endif
 ```
