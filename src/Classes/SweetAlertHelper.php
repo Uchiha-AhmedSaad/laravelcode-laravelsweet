@@ -29,18 +29,10 @@ class SweetAlertHelper
 	}
 	public function Router()
 	{
-		if ($this->status == 'success') 
-		{
-			return $this->Success();
-		}
-		elseif ($this->status == 'error') 
-		{
-			return $this->Error();
-		}
-		elseif ($this->status == 'warning') 
-		{
-			return $this->Warning();
-		}
+		if     ($this->status == 'success') {return $this->Success();}
+		elseif ($this->status == 'error'  ) {return $this->Error();  }
+		elseif ($this->status == 'warning') {return $this->Warning();}
+		elseif ($this->status == 'info'   ) {return $this->Info();   }
 	}
 	public function Success()
 	{
@@ -48,7 +40,7 @@ class SweetAlertHelper
 			'status'	=> 'success',
 			'title'		=> 'Successful',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} has Successfully {$this->method}",
+			'text'		=> "{$this->element} Successfully {$this->method}"
 		];
 	}
 	public function Error()
@@ -57,7 +49,7 @@ class SweetAlertHelper
 			'status'	=> 'error',
 			'title'		=> 'error',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} has Unsuccessfully  {$this->method}",
+			'text'		=> "{$this->element}  Unsuccessfully {$this->method}"
 		];
 	}
 	public function Warning()
@@ -66,7 +58,16 @@ class SweetAlertHelper
 			'status'	=> 'warning',
 			'title'		=> 'Attention',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} Will {$this->method}",
+			'text'		=> "{$this->element} {$this->method}"
+		];
+	}
+	public function Info()
+	{
+		return [
+			'status'	=> 'info',
+			'title'		=> 'Important',
+			'timer'		=> $this->timer,
+			'text'		=> "{$this->element} {$this->method}"
 		];
 	}	
 }
