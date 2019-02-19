@@ -40,7 +40,7 @@ class SweetAlertHelper
 			'status'	=> 'success',
 			'title'		=> 'Successful',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} Successfully {$this->method}"
+			'text'		=> "{$this->method} {$this->element} Done Successfully "
 		];
 	}
 	public function Error()
@@ -49,7 +49,7 @@ class SweetAlertHelper
 			'status'	=> 'error',
 			'title'		=> 'error',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element}  Unsuccessfully {$this->method}"
+			'text'		=> "{$this->method} {$this->element} Failure"
 		];
 	}
 	public function Warning()
@@ -58,7 +58,7 @@ class SweetAlertHelper
 			'status'	=> 'warning',
 			'title'		=> 'Attention',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} {$this->method}"
+			'text'		=> "{$this->method} {$this->element}"
 		];
 	}
 	public function Info()
@@ -67,7 +67,7 @@ class SweetAlertHelper
 			'status'	=> 'info',
 			'title'		=> 'Important',
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->element} {$this->method}"
+			'text'		=> " {$this->method} {$this->element}"
 		];
 	}	
 }
