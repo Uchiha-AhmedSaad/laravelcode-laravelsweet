@@ -22,9 +22,9 @@ inside  class you want to use
 
 ```php
 /**
-     *@param string $field_name  
+     *@param string $field_name  the name of your filed you make if you use it to make user write User.
      *@param string $method      The function of method ['Create','Update','Delete','Edit']
-     *@param string $status      Choose one of this ['error','success','warning']
+     *@param string $status      Choose one of this ['error','success','warning','info']
      *@param int    $time        choose the time you want to delay appear sweetalert 1 second = 1000 
      *@return void               no return of this function sweetalert it just make session of this .
 */
@@ -34,6 +34,12 @@ class UsersController extends ComponentsController
 
     public function Index()
     {
+        /*
+            * SweetFlash("Users","Create","success",1000);
+            * SweetFlash("Users","Create","error",1000);
+            * SweetFlash("Users","Create","warning",1000);
+            * SweetFlash("Users","Create","info",1000);
+        */
         SweetFlash($field_name,$method,$status,$time);
     }
 
