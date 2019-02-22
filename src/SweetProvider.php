@@ -25,6 +25,6 @@ class SweetProvider extends ServiceProvider
     }
     public function files()
     {
-        require :self:FILES_DIR;
+        require self::FILES_DIR;
     }
 }
