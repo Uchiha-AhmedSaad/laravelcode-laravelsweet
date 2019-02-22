@@ -7,6 +7,9 @@ use Illuminate\Support\ServiceProvider;
 class SweetProvider extends ServiceProvider
 {
 
+    const FILES_DIR = __DIR__ . '/Files/Helper.php';
+
+
     public function boot()
     {
         $this->files();
@@ -22,6 +25,6 @@ class SweetProvider extends ServiceProvider
     }
     public function files()
     {
-        require __DIR__ . '/Files/Helper.php';
+        require :self:FILES_DIR;
     }
 }
