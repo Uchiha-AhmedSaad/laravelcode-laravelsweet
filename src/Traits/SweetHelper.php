@@ -11,4 +11,9 @@ trait SweetHelper
 	{
 		return new SweetAlertHelper($element,$method,$status,$time);
 	}
+    public function get_trans_file_json()
+    {
+        $json_trans = __DIR__."/../Trans";
+        return $json_trans;
+    }
 }

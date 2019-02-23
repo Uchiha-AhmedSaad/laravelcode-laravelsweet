@@ -38,36 +38,37 @@ class SweetAlertHelper
 	{
 		return [
 			'status'	=> 'success',
-			'title'		=> 'Successful',
+			'title'		=> __('Successful'),
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->method} {$this->element} Done Successfully "
+			'text'		=> __($this->method).' '.__($this->element).' '.__('Done Successfully')
 		];
 	}
 	public function Error()
 	{
 		return [
 			'status'	=> 'error',
-			'title'		=> 'error',
+			'title'		=> __('Error'),
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->method} {$this->element} Failure"
+			
+			'text'		=> __($this->method).' '.__($this->element).' '.__('Failure')
 		];
 	}
 	public function Warning()
 	{
 		return [
 			'status'	=> 'warning',
-			'title'		=> 'Attention',
+			'title'		=> __('Attention'),
 			'timer'		=> $this->timer,
-			'text'		=> "{$this->method} {$this->element}"
+			'text'		=> __($this->method).' '.__($this->element)
 		];
 	}
 	public function Info()
 	{
 		return [
 			'status'	=> 'info',
-			'title'		=> 'Important',
+			'title'		=> __('Important'),
 			'timer'		=> $this->timer,
-			'text'		=> " {$this->method} {$this->element}"
+			'text'		=> __($this->method).' '.__($this->element)
 		];
 	}	
 }
