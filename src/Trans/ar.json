@@ -1,12 +1,13 @@
 {
-    "Successful": "\u0646\u0627\u062c\u062d",
-    "Error": "\u062e\u0637\u0623",
-    "Attention": "\u0625\u0646\u062a\u0628\u0647",
-    "Important": "\u0645\u0647\u0645 \u062c\u062f\u0627",
-    "Done Successfully": "\u062a\u0645 \u0628\u0646\u062c\u0627\u062d",
-    "Failure": "\u0641\u0634\u0644",
-    "Creating": "\u0627\u0644\u0625\u0646\u0634\u0627\u0621",
-    "Update": "\u062a\u062d\u062f\u064a\u062b",
-    "Edite": "\u062a\u0639\u062f\u064a\u0644",
-    "Delete": "\u062d\u0630\u0641"
+    "My Dream": "احمد",
+    "Successful": "ناجح",
+    "Error": "خطأ",
+    "Attention": "إنتبه",
+    "Important": "مهم جدا",
+    "Done Successfully": "تم بنجاح",
+    "Failure": "فشل",
+    "Creating": "الإنشاء",
+    "Update": "تحديث",
+    "Edite": "تعديل",
+    "Delete": "حذف"
 }
