@@ -14,7 +14,7 @@ Laravelcode\LaravelSweet\SweetProvider::class,
 
 
 ## Usage
-inside  class you want to use 
+inside  class you want to use , this sweetalert package support arabic langauge inside it 
 
 
 ### Basic
